@@ -1,0 +1,13 @@
+run_id,species,data_in,output_dir,woodland_covariates,levels_to_drop
+curlew_g1,curlew,data/curlew1.rds,outputs/curlew_g1,dist_all_wood,"""Study A_2020"", ""Study A_2022"", ""Study A_2023"", ""Study D_2024"""
+curlew_g2,curlew,data/curlew2.rds,outputs/curlew_g2,dist_all_wood,"""Study A_2020"", ""Study A_2022"", ""Study A_2023"", ""Study D_2024"""
+curlew_g3,curlew,data/curlew3.rds,outputs/curlew_g3,dist_all_wood,"""Study A_2020"", ""Study A_2022"", ""Study A_2023"", ""Study D_2024"""
+lapwing_g1,lapwing,data/lapwing1.rds,outputs/lapwing_g1,dist_broad_wood + dist_conifer_wood,None
+lapwing_g2,lapwing,data/lapwing2.rds,outputs/lapwing_g2,dist_broad_wood + dist_conifer_wood,None
+lapwing_g3,lapwing,data/lapwing3.rds,outputs/lapwing_g3,dist_broad_wood + dist_conifer_wood,None
+oystercatcher_g1,oystercatcher,data/oystercatcher1.rds,outputs/oystercatcher_g1,dist_all_wood,None
+oystercatcher_g2,oystercatcher,data/oystercatcher2.rds,outputs/oystercatcher_g2,dist_all_wood,None
+oystercatcher_g3,oystercatcher,data/oystercatcher3.rds,outputs/oystercatcher_g3,dist_all_wood,None
+redshank_g1,redshank,data/redshank1.rds,outputs/redshank_g1,dist_all_wood,"""Study B_2018"", ""Study C_2010"", ""Study D_2019"", ""Study D_2023"", ""Study F_2021"""
+redshank_g2,redshank,data/redshank2.rds,outputs/redshank_g2,dist_all_wood,"""Study B_2018"", ""Study C_2010"", ""Study D_2019"", ""Study D_2023"", ""Study F_2021"""
+redshank_g3,redshank,data/redshank3.rds,outputs/redshank_g3,dist_all_wood,"""Study B_2018"", ""Study C_2010"", ""Study D_2019"", ""Study D_2023"", ""Study F_2021"""
