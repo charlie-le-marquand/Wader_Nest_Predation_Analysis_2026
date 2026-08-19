@@ -44,7 +44,7 @@ for(i in 1:nrow(control_table)) {
   
   # 3. DATA DENSITY PROCESSING (RUG PLOTS) ----------------------------------------------------------------------------------------------------------
   
-  # To visualize the distribution of our observations, we calculate 101 quantiles 
+  # To visualize the distribution of the observations, calculate 101 quantiles 
   # for each covariate, split by the binary outcome (Predated vs. Hatched).
   vars_to_process <- names(all_plots)
   quantile_all <- list()
@@ -66,7 +66,7 @@ for(i in 1:nrow(control_table)) {
     # Retrieve the base marginal effect plot (Line + 95% Credible Interval)
     p_base <- all_plots[[v]]
     
-    # Apply manuscript-standard theme and add visual indicators
+    # Apply theme and add visual indicators
     p_edited <- p_base +
       # Bottom Rug: Distribution of predated nests
       geom_rug(data = quantile_all, aes(x = .data[[paste0(v, "_TRUE")]]), 
@@ -129,7 +129,7 @@ for(i in 1:nrow(control_table)) {
       plot.tag.margin = margin(t = 2, r = 2, b = 0, l = 0)
     )
   
-  # Export final figure at high resolution (600 DPI) for publication
+  # Export final figure at high resolution (600 DPI) 
   if(!dir.exists(file.path(out_dir, "figures"))) dir.create(file.path(out_dir, "figures"), recursive = TRUE)
   
   ggsave(file.path(out_dir, "figures", paste0(run_id, "_main_figure.jpg")), 
